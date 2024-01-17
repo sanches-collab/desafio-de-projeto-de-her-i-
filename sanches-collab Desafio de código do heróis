@@ -1,0 +1,31 @@
+const herois = ["Superman", "Mulher Maravilha", "Batman", "Aquaman", "Flash", "Lanterna Verde", "Caçador de Marte", "Ciborgue"];
+let experiencia = [1000, 1001, 2000, 2001, 5000, 5001, 7001, 8000, 8001, 9000];
+
+const indiceHeroi = 2; 
+let indiceXP = 2; 
+
+const nomeHeroi = herois[indiceHeroi];
+let xpHeroi = experiencia[indiceXP];
+
+
+let nivel = "";
+if (xpHeroi < 1000) {
+  nivel = "Ferro";
+} else if (xpHeroi <= 2000) {
+  nivel = "Bronze";
+} else if (xpHeroi <= 5000) {
+  nivel = "Prata";
+} else if (xpHeroi <= 7000) {
+  nivel = "Ouro";
+} else if (xpHeroi <= 8000) {
+  nivel = "Platina";
+} else if (xpHeroi <= 9000) {
+  nivel = "Ascendente";
+} else if (xpHeroi <= 10000) {
+  nivel = "Imortal";
+} else {
+  nivel = "Radiante";
+}
+
+
+console.log(`O Heroi de nome: ${nomeHeroi} está no nível de: ${nivel}`);
